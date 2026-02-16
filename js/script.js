@@ -17,4 +17,12 @@ const aForm = document.getElementById('answers-form')
 // Inserisco il contenuto dell'array all'interno di nList attraverso innerHTML
 // Utilizzo il metodo .join per aggiungere uno spazio fra ogni numeri per una questione di miglior visibilità
 nList.innerHTML = `<li>${numbersArray.join(' ')}</li>`;
+
+// Creo una funzione per far partire il countdown di 30 secondi e far sparire i numeri
+setTimeout(function() {
+     nList.classList.add('d-none');
+     aForm.classList.remove('d-none');
+}, 30000);
+
+
                   
